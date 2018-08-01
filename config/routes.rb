@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
 	get 'users/error', 		to: 'users#error',             as: :error
 	get 'users/:user_id',   to: 'users#show',			   as: :showprofil
+	
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

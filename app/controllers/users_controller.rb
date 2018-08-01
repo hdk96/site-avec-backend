@@ -13,13 +13,14 @@ class UsersController < ApplicationController
             redirect_to "/users/#{@user.id}"
         else
             redirect_to "/users/error"
-        end
+        end 
 	end 
 
 	def show
-		@user = User.find(params[:user_id])
-
-		@username = @user.username
-		@userbio  = @user.bio
+	 
+			@user = User.find(params[:user_id])
+			
 	end 
+	
+
 end
